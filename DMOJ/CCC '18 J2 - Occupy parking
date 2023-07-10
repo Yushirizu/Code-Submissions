@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    // First line is the number of parking spots
+    // Second line is the parking spots on the first day
+    // Third line is the parking spots on the second day
+
+    int spots;
+    int occupied = 0;
+    char second[100];
+    char first[100];
+
+    scanf("%d", &spots);
+
+    scanf("%s", first);
+
+    scanf("%s", second);
+
+    for (int i = 0; i < spots; i++)
+    {
+        if (first[i] == 'C' && second[i] == 'C')
+        {
+            occupied++;
+        }
+    }
+
+    printf("%d", occupied);
+
+    return 0;
+}
