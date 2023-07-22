@@ -26,4 +26,6 @@ int main()
     {
         printf("Normal weight");
     }
+
+    return 0;
 }
